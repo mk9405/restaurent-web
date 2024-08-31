@@ -36,3 +36,42 @@
     transform: rotate(360deg);
   }
 }
+
+.footerImg {
+  background-image: url("./assets/Footers-bg.png");
+  height: 68vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.plus-jakarta-sans {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.faq {
+  background-image: url("./assets/faq-bg.png");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.category {
+  background-image: url("./assets/categories-bg.png");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.traditional {
+  background-image: url("./assets/traditional-bg.png");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+

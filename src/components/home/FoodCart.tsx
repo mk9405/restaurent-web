@@ -1,22 +1,30 @@
-export default function TraditionalFood() {
-  return (
-    <div className=" gap-10 py-10">
-      <h1 className="font-bold text-5xl mx-auto justify-center text-center pb-4">
-        Some Traditional Food
-      </h1>
-      <h1 className="font-bold text-5xl mx-auto justify-center text-center ">
-        {" "}
-        Based on Location
-      </h1>
+import foodData from "../../services/offline/food.json";
+import popular from "../../assets/popular-1.png";
+import { MdOutlineAddShoppingCart } from "react-icons/md";
 
-      <ul className="flex gap-4 mx-auto justify-center my-10 py-2 font-bold items-center text-lg border-2 rounded-xl border-red-400 w-[750px]">
-        <li className="text-white bg-red-500 px-3 py-2 rounded-lg">All Category</li>
-        <li className="px-3 py-2 rounded-lg">Thai Cuision</li>
-        <li className="px-3 py-2 rounded-lg">Mexican</li>
-        <li className="px-3 py-2 rounded-lg">Italian</li>
-        <li className="px-3 py-2 rounded-lg">Vegitarian</li>
-        <li className="px-3 py-2 rounded-lg">JunkFood</li>
-      </ul>
-    </div>
+export default function FoodCart() {
+  return (
+    <>
+      {foodData.map((d) => (
+        <div className="flex gap-5 shadow-lg w-[600px]">
+          <img src={popular} alt="" />
+          <div className="py-5">
+            <h1 className="font-bold text-xl pb-3">{d.name}</h1>
+            <p className="font-semibold text-md pb-3 ">4 Piece Chicken</p>
+            <p className="font-semibold text-md pb-3 border-b-2">Spicy Souce</p>
+            <div className="flex justify-between py-3 items-center">
+              <h1 className="font-extrabold text-2xl ">$30</h1>
+              <button
+                type="submit"
+                className="p-3 border-2 rounded-lg font-semibold flex items-center gap-2 text-gray-400"
+              >
+                <MdOutlineAddShoppingCart />
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      ))}
+    </>
   );
 }

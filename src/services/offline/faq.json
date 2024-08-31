@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "What type of cuisine does your restaurent offer?",
+    "subtitle": "We offer [insert type of cuisine, e.g., Italian, Asian fusion, Mediterranean] cuisine that combines traditional flavors with modern twists."
+  },
+  {
+    "id": 2,
+    "title": "Can I make a reservation online?",
+    "subtitle": "We offer [insert type of cuisine, e.g., Italian, Asian fusion, Mediterranean] cuisine that combines traditional flavors with modern twists."
+  },
+  {
+    "id": 3,
+    "title": "Is there a dress code for dinning at your restaurent?",
+    "subtitle": "We offer [insert type of cuisine, e.g., Italian, Asian fusion, Mediterranean] cuisine that combines traditional flavors with modern twists."
+  },
+  {
+    "id": 4,
+    "title": "Is there a dress code for dinning at your restaurent?",
+    "subtitle": "We offer [insert type of cuisine, e.g., Italian, Asian fusion, Mediterranean] cuisine that combines traditional flavors with modern twists."
+  }
+]

@@ -1,11 +1,12 @@
 import promo1 from "../../assets/PromoBanner.png";
 import promo2 from "../../assets/PromoBanner-1.png";
-import TraditionalFood from "./FoodCart";
+import TraditionalFood from "./TraditionalFood";
 import ProcessCraft from "./Process";
+import "../../App.css"
 
 export default function Category() {
   return (
-    <div className="justify-center items-center">
+    <div className=" justify-center items-center">
       <div className="flex mx-auto justify-center gap-[700px] py-14  ">
         <h1 className="font-bold text-5xl">Our Categories</h1>
         <button className="py-3 px-8 border-2 rounded-lg">See more</button>
