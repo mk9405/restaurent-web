@@ -69,3 +69,30 @@ export function CategoryFoodCart() {
     </div>
   );
 }
+
+export function WhislistCart() {
+  return (
+    <>
+      {foodData.map((d) => (
+        <div key={d.id} className="flex gap-5 shadow-lg w-[49%]">
+          <img src={popular} alt="" width={200} />
+          <div className="py-2">
+            <h1 className="font-bold text-lg pb-2">{d.name}</h1>
+            <p className="font-semibold text-sm pb-2 ">4 Piece Chicken</p>
+            <p className="font-semibold text-sm pb-2 border-b-2">Spicy Souce</p>
+            <div className="flex justify-between py-2 items-center">
+              <h1 className="font-extrabold text-xl ">$30</h1>
+              <button
+                type="submit"
+                className="p-2 border-2 rounded-lg font-semibold flex items-center gap-2 text-gray-400"
+              >
+                <MdOutlineAddShoppingCart />
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      ))}
+    </>
+  );
+}

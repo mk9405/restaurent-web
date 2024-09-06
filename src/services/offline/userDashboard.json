@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Edit Profile"
+  },
+  {
+    "id": 2,
+    "title": "Address"
+  },
+  {
+    "id": 3,
+    "title": "Order & Reordering"
+  },
+  {
+    "id": 4,
+    "title": "Whislist"
+  },
+  {
+    "id": 5,
+    "title": "Reviews"
+  },
+  {
+    "id": 6,
+    "title": "Change Password"
+  },
+  {
+    "id": 7,
+    "title": "Logout"
+  }
+]

@@ -2,16 +2,14 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Faq from "../components/home/Faq";
 import Restaurent from "../components/home/Restaurent";
-import DashHero from "../components/dashboard/DashHero";
 import "../App.css";
-import UserDetails from "../components/dashboard/userDetails";
+import ContactHero from "../components/contact/ContactHero";
 
-export default function UserDashboard() {
+export default function Contact() {
   return (
     <div className="plus-jakarta-sans">
       <Navbar />
-      <DashHero />
-      <UserDetails />
+      <ContactHero />
       <Faq />
       <Restaurent />
       <Footer />

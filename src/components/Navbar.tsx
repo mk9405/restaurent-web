@@ -19,6 +19,16 @@ const Nav = () => {
 
   window.addEventListener("scroll", changeColor);
 
+  const [showpages, setShowpages] = useState(false);
+
+  const toggle = () => {
+    if (showpages) {
+      setShowpages(false);
+    } else {
+      setShowpages(true);
+    }
+  };
+
   return (
     <>
       <div className={color ? "header header-bg" : "header"}>
@@ -37,13 +47,32 @@ const Nav = () => {
               Menu
             </Link>
             <Link to="/" className="line">
-              <div className="dropdown dropdown-hover">
+              <div onClick={toggle}>
                 <div className="flex">
-                  Page{" "}
+                  Page
                   <MdOutlineKeyboardArrowDown className="mt-0.5" size={20} />
                 </div>
               </div>
             </Link>
+            {showpages && (
+              <div className=" absolute top-20 translate-x-36 bg-[#394150] text-white p-5 rounded-xl font-bold">
+                <div>
+                  <Link to="/about" className="line mb-2">
+                    <h1>About us</h1>
+                  </Link>
+                </div>
+                <div>
+                  <Link to="/contact" className="line mb-2">
+                    <h1>Contact us</h1>
+                  </Link>
+                </div>
+                <div>
+                  <Link to="/privacy" className="line">
+                    <h1>Privacy & Policy</h1>
+                  </Link>
+                </div>
+              </div>
+            )}
             <Link to="/user-dashboard" className="line">
               UserDashboard
             </Link>

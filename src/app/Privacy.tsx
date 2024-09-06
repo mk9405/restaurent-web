@@ -1,18 +1,14 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import Faq from "../components/home/Faq";
 import Restaurent from "../components/home/Restaurent";
-import DashHero from "../components/dashboard/DashHero";
 import "../App.css";
-import UserDetails from "../components/dashboard/userDetails";
+import PrivacyHero from "../components/privacy/PrivacyHero";
 
-export default function UserDashboard() {
+export default function Privacy() {
   return (
     <div className="plus-jakarta-sans">
       <Navbar />
-      <DashHero />
-      <UserDetails />
-      <Faq />
+      <PrivacyHero />
       <Restaurent />
       <Footer />
     </div>
