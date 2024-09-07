@@ -18,21 +18,10 @@ const Nav = () => {
   };
 
   window.addEventListener("scroll", changeColor);
-
-  const [showpages, setShowpages] = useState(false);
-
-  const toggle = () => {
-    if (showpages) {
-      setShowpages(false);
-    } else {
-      setShowpages(true);
-    }
-  };
-
   return (
     <>
       <div className={color ? "header header-bg" : "header"}>
-        <nav className="max-w-[1300px] flex justify-between items-center mx-auto py-4 ">
+        <nav className="max-w-[1300px] flex justify-between  items-center mx-auto py-4 ">
           <div>
             <img src={Image} className="cursor-pointer" alt="" />
           </div>
@@ -46,16 +35,12 @@ const Nav = () => {
             <Link to="/" className="line">
               Menu
             </Link>
-            <Link to="/" className="line">
-              <div onClick={toggle}>
-                <div className="flex">
-                  Page
-                  <MdOutlineKeyboardArrowDown className="mt-0.5" size={20} />
-                </div>
+            <div className="dropdown">
+              <div className="flex text-white">
+                Page
+                <MdOutlineKeyboardArrowDown className="mt-0.5" size={20} />
               </div>
-            </Link>
-            {showpages && (
-              <div className=" absolute top-20 translate-x-36 bg-[#394150] text-white p-5 rounded-xl font-bold">
+              <div className="dropdown-content">
                 <div>
                   <Link to="/about" className="line mb-2">
                     <h1>About us</h1>
@@ -67,12 +52,22 @@ const Nav = () => {
                   </Link>
                 </div>
                 <div>
+                  <Link to="/blog" className="line mb-2">
+                    <h1>Blog</h1>
+                  </Link>
+                </div>
+                <div>
+                  <Link to="/blog-details" className="line mb-2">
+                    <h1>Blog Details</h1>
+                  </Link>
+                </div>
+                <div>
                   <Link to="/privacy" className="line">
                     <h1>Privacy & Policy</h1>
                   </Link>
                 </div>
               </div>
-            )}
+            </div>
             <Link to="/user-dashboard" className="line">
               UserDashboard
             </Link>

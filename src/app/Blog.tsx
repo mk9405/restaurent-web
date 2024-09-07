@@ -3,15 +3,13 @@ import Navbar from "../components/Navbar";
 import Faq from "../components/home/Faq";
 import Restaurent from "../components/home/Restaurent";
 import "../App.css";
-import ContactHero from "../components/contact/ContactHero";
-import ContactForm from "../components/contact/ContactForm";
+import BlogHero from "../components/blog/BlogHero";
 
-export default function Contact() {
+export default function Blog() {
   return (
     <div className="plus-jakarta-sans">
       <Navbar />
-      <ContactHero />
-      <ContactForm />
+      <BlogHero />
       <Faq />
       <Restaurent />
       <Footer />
