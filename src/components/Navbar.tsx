@@ -62,6 +62,11 @@ const Nav = () => {
                   </Link>
                 </div>
                 <div>
+                  <Link to="/food-details" className="line mb-2">
+                    <h1>Food Details</h1>
+                  </Link>
+                </div>
+                <div>
                   <Link to="/privacy" className="line">
                     <h1>Privacy & Policy</h1>
                   </Link>

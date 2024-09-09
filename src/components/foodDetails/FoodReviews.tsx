@@ -1,15 +1,10 @@
 import { TiStarFullOutline } from "react-icons/ti";
 import review from "../../services/offline/review.json";
 
-export default function Reviews() {
+export function FoodReviews() {
   return (
     <div className="flex-1 ">
-      <h1 className="text-2xl font-bold">Dashboard</h1>
-      <p className="text-gray-500 font-semibold py-3">Let's check your today</p>
       <div className="bg-[#f4f4f6] p-5 rounded-xl">
-        <div className="flex items-center justify-between pb-5">
-          <h1 className="font-bold text-2xl">Review List</h1>
-        </div>
         {review.map((d) => (
           <div className="bg-white mb-5 p-4 rounded-xl">
             <h1 className="font-bold text-lg pb-2">{d.title}</h1>
