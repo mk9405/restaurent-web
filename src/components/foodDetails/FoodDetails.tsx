@@ -110,7 +110,7 @@ export default function FoodDetailsView() {
           {boughtFood.map((d) => (
             <div className="flex m-4 justify-between items-center rounded-xl p-4 bg-white">
               <div className="flex gap-4">
-                <input type="checkbox" name="" id="" className="w-10 bg-red-500 text-red-500" />
+                <input type="checkbox" name="" id="" className="w-10" />
                 <h1 className="font-semibold">
                   {d.name}(${d.price}.00)
                 </h1>
@@ -143,7 +143,7 @@ export default function FoodDetailsView() {
           <div className="pr-4">
             <button
               type="submit"
-              className="w-[96%] p-3 m-4 justify-center border-2 rounded-lg font-semibold flex items-center gap-2 text-white bg-red-500"
+              className="w-[96%] p-4 m-4 justify-center border-2 rounded-lg font-semibold flex items-center gap-2 text-white bg-red-500"
             >
               <MdOutlineAddShoppingCart />
               Add To Cart

@@ -32,7 +32,7 @@ const Nav = () => {
               </div>
             </Link>
 
-            <Link to="/" className="line">
+            <Link to="/menu" className="line">
               Menu
             </Link>
             <div className="dropdown">
@@ -64,6 +64,16 @@ const Nav = () => {
                 <div>
                   <Link to="/food-details" className="line mb-2">
                     <h1>Food Details</h1>
+                  </Link>
+                </div>
+                <div>
+                  <Link to="/shopping" className="line mb-2">
+                    <h1>Shopping Cart</h1>
+                  </Link>
+                </div>
+                <div>
+                  <Link to="/cart-address" className="line mb-2">
+                    <h1>Cart Address</h1>
                   </Link>
                 </div>
                 <div>

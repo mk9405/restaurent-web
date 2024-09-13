@@ -51,9 +51,9 @@ export default function FoodCart() {
 
 export function CategoryFoodCart() {
   return (
-    <div className="flex flex-wrap justify-between w-[1300px] mx-auto gap-10 pb-14">
+    <div className="flex flex-wrap justify-between w-[1300px] mx-auto gap-y-10 pb-14">
       {foodData.map((d) => (
-        <div className="group gap-5 shadow-lg w-[410px] relative ">
+        <div className="group shadow-lg w-[410px] relative ">
           <div className="absolute flex items-center justify-between w-full p-3 z-20">
             <FaRegHeart
               color="red"
