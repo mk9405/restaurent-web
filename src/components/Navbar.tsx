@@ -25,7 +25,7 @@ const Nav = () => {
           <div>
             <img src={Image} className="cursor-pointer" alt="" />
           </div>
-          <div className="flex gap-5 py-4">
+          <div className="flex gap-5 py-4 max-sm:hidden ">
             <Link to="/" className="line">
               <div className="flex text-white font-semibold ">
                 Home <MdOutlineKeyboardArrowDown className="mt-0.5" size={20} />
@@ -87,7 +87,7 @@ const Nav = () => {
               UserDashboard
             </Link>
           </div>
-          <div className="flex  min-w-28 items-center bg-[#394150] rounded-lg border-[1px] border-[#6c727f]">
+          <div className="flex max-sm:hidden  min-w-28 items-center bg-[#394150] rounded-lg border-[1px] border-[#6c727f]">
             <input
               type="search"
               placeholder="Search food"
@@ -99,7 +99,7 @@ const Nav = () => {
               className="mr-4 cursor-pointer"
             />
           </div>
-          <div className="flex gap-5">
+          <div className="flex gap-5 max-sm:hidden">
             <div className="edit1 border-[1px] bg-[#394150] p-4 border-[#6c727f] rounded-full hover:bg-[#f01543] duration-300 cursor-pointer">
               <span
                 className="absolute bg-[#f01543] text-white rounded-full px-[6px] py-[0.5px] text-[12px] font-bold translate-x-6 translate-y-[-15px]"
