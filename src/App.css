@@ -45,6 +45,12 @@
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 646px) {
+  .footerImg{
+    height: auto;
+  }
+}
+
 
 .plus-jakarta-sans {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -57,6 +63,12 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width:646px) {
+  .faq {
+    height: auto;
+  }
 }
 
 .category {

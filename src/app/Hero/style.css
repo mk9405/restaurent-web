@@ -36,6 +36,11 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media screen and (max-width:1024px) {
+  .img{
+    height: auto;
+  }
+}
 
 .restaurent {
   background-image: url("../../assets/rest-bg.png");
@@ -43,6 +48,13 @@ p {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 646px) {
+  .restaurent{
+    height: auto;
+  }
+  
 }
 
 

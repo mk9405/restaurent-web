@@ -18,10 +18,10 @@ export default function Faq() {
     }
   };
   return (
-    <div className="faq flex mx-auto justify-center gap-14 py-20">
+    <div className="faq flex flex-wrap mx-auto justify-center gap-14 py-20 max-sm:p-10">
       <div>
-        <h1 className="text-[#000929] font-bold text-5xl pb-14">
-          Foodie FAQ: Your Culinary <br /> Queries Answerered{" "}
+        <h1 className="text-[#000929] font-bold text-5xl max-sm:text-3xl max-sm:w-full max-sm:mx-auto pb-14">
+          Foodie FAQ: Your Culinary <br /> Queries Answerered
         </h1>
         <div>
           {faqData.map((d) => (
@@ -31,15 +31,15 @@ export default function Faq() {
                 onClick={() => toggleAccordian(d.id)}
                 className={
                   accordian !== d.id
-                    ? "flex justify-between items-center font-bold text-lg bg-white w-[550px] p-5 rounded-lg shadow-lg mb-4 cursor-pointer"
-                    : "flex justify-between items-center font-bold text-lg bg-white w-[550px] p-5 rounded-lg shadow-lg cursor-pointer"
+                    ? "flex justify-between items-center font-bold text-lg max-sm:text-base max-sm:p-4 bg-white w-[550px] max-sm:w-full p-5 rounded-lg shadow-lg mb-4 cursor-pointer"
+                    : "flex justify-between items-center font-bold text-lg max-sm:text-base max-sm:p-4 bg-white w-[550px] max-sm:w-full p-5 rounded-lg shadow-lg cursor-pointer"
                 }
               >
                 <h1>{d.title}</h1>
                 <IoIosArrowUp />
               </div>
               {accordian === d.id ? (
-                <div className="font-semibold text-base bg-white w-[550px] p-5 rounded-lg shadow-lg mb-4 cursor-pointer">
+                <div className="font-semibold text-base bg-white w-[550px] max-sm:w-full p-5 rounded-lg shadow-lg mb-4 cursor-pointer">
                   {d.subtitle}
                 </div>
               ) : null}
@@ -50,12 +50,12 @@ export default function Faq() {
 
       <div>
         <div className="flex gap-4 pb-4">
-          <img src={faqImg} alt="" />
-          <img src={faqImg2} alt="" width={200} />
+          <img src={faqImg} alt="" className="max-sm:w-[180px]" />
+          <img src={faqImg2} alt="" width={200} className="max-sm:w-[120px]" />
         </div>
         <div className="flex gap-4">
-          <img src={faqImg3} alt="" width={255} />
-          <img src={faqImg4} alt="" />
+          <img src={faqImg3} alt="" width={255} className="max-sm:w-[120px]" />
+          <img src={faqImg4} alt="" className="max-sm:w-[180px]" />
         </div>
       </div>
     </div>

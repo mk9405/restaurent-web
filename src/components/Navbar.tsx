@@ -21,11 +21,11 @@ const Nav = () => {
   return (
     <>
       <div className={color ? "header header-bg" : "header"}>
-        <nav className="max-w-[1300px] flex justify-between  items-center mx-auto py-4 ">
+        <nav className="max-w-[1300px] flex justify-between  items-center mx-auto py-4 max-sm:px-4 ">
           <div>
             <img src={Image} className="cursor-pointer" alt="" />
           </div>
-          <div className="flex gap-5 py-4 max-sm:hidden ">
+          <div className="flex gap-5 py-4 max-md:hidden ">
             <Link to="/" className="line">
               <div className="flex text-white font-semibold ">
                 Home <MdOutlineKeyboardArrowDown className="mt-0.5" size={20} />

@@ -10,10 +10,10 @@ import gpay from "../assets/gpay.png";
 export default function Footer() {
   return (
     <>
-      <section className="footerImg py-28 mx-auto justify-center gap-20 flex">
+      <section className="footerImg py-28 mx-auto justify-center gap-20 flex max-sm:flex-wrap max-sm:px-10 max-sm:py-20 max-sm:justify-start">
         <div className="">
           <img src={logo} alt="" className="pb-3" />
-          <p className="text-[#f4f4f6] text-lg font-semibold w-96 pb-8">
+          <p className="text-[#f4f4f6] text-lg font-semibold w-96 pb-8 max-sm:w-full">
             At ReservQ, we invite you to embark on a journey of taste and
             delight.Our tables are more than just places.
           </p>
@@ -68,7 +68,7 @@ export default function Footer() {
         </div>
         <div className="text-[#f4f4f6] font-bold">
           <h1 className="text-2xl pb-5">Subscribe our Newsletter</h1>
-          <div className="flex gap-4 pb-10 ">
+          <div className="flex gap-4 pb-10 max-sm:flex-col ">
             <div className="flex gap-4 bg-[#323A54] p-4 rounded-lg overflow-hidden ">
               <img src={gmail} alt="" />
               <input

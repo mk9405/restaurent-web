@@ -11,7 +11,7 @@ export default function FoodCart() {
   return (
     <>
       {foodData.map((d) => (
-        <div className="group flex  relative gap-5 shadow-lg w-[600px]">
+        <div className="group flex flex-wrap max-sm:w-full max-sm:justify-center max-sm: relative gap-5 shadow-lg w-[600px]">
           <div className="flex text-white bg-black backdrop-blur-sm p-2 m-2 rounded-xl font-bold absolute z-20">
             <TiStarFullOutline color="orange" size={20} />
             4.7(2.5k)
@@ -51,7 +51,7 @@ export default function FoodCart() {
 
 export function CategoryFoodCart() {
   return (
-    <div className="flex flex-wrap justify-between w-[1300px] mx-auto gap-y-10 pb-14">
+    <div className="flex flex-wrap justify-between w-[1300px] max-sm:w-full mx-auto gap-y-10 pb-14">
       {foodData.map((d) => (
         <div className="group shadow-lg w-[410px] relative ">
           <div className="absolute flex items-center justify-between w-full p-3 z-20">

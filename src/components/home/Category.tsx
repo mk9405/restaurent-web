@@ -9,18 +9,18 @@ import { GiBread, GiNoodles } from "react-icons/gi";
 
 export default function Category() {
   return (
-    <div className=" max-w-[1300px] mx-auto justify-center items-center py-14">
-      <div className="flex justify-between pb-14  ">
-        <h1 className="font-bold text-5xl">Our Categories</h1>
-        <button className="py-3 px-8 border-2 rounded-lg">See more</button>
+    <div className=" max-w-[1300px] mx-auto max-sm:w-full justify-center items-center py-14 max-sm:px-10">
+      <div className="flex justify-between pb-14 max-sm:justify-center max-lg:px-10  ">
+        <h1 className="font-bold text-5xl max-sm:text-3xl">Our Categories</h1>
+        <button className="py-3 px-8 border-2 rounded-lg max-sm:hidden">See more</button>
       </div>
 
       <div>
         <div>
-          <div className="flex item-center justify-between pb-12">
+          <div className="flex max-sm:flex-wrap item-center justify-between pb-12 max-sm:gap-y-4">
             <div>
               <button className="button" id="btn2">
-                <div className="flex flex-row item-center gap-2">
+                <div className="flex flex-row item-center gap-2 max-sm:w-full">
                   <span className="span">
                     <PiHamburger size={50} />
                   </span>
@@ -77,7 +77,7 @@ export default function Category() {
         </div>
       </div>
 
-      <div className="flex flex-wrap justify-between">
+      <div className="flex flex-wrap justify-between max-sm:gap-y-4">
         <img src={promo1} alt="" width={600} />
         <img src={promo2} alt="" />
       </div>
